@@ -115,6 +115,12 @@ if name == "Boss":
 		restore = input("System Restoration needed?")
 		if restore == "y":
 			printt("System Restoration Started",0.05)
+			printt("1------2------3------4------5------",0.05)
+			printt("System Restoration Completed")
+			number == 0
+			cost == 0
+			sales == 0
+			printt("Total cost for", number, "items is $", cost,"and your sales tax is", sales,0.05)
 		elif restore == "n":
 			printt("Ok, Bye",0.05)
 			flag = True
