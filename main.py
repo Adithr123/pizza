@@ -120,7 +120,7 @@ if name == "Boss":
 			flag = True
 else:
 	print("Total cost for", number, "items is $", cost,"and your sales tax is", sales)
-	print("Thank You,"name"for eating at Adiths Pizzeria!",0.05)
+	print("Thank You,",name,"for eating at Adiths Pizzeria!",0.05)
 	flag = True
 	printt("Your pizza can be found at: https://bit.ly/whatyoupaidfor. You have to copy and paste the link in a different tab, or else it will give you an error. Idk why.",0.05)
 	
