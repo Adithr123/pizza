@@ -99,9 +99,9 @@ if language == "1":
 			printt ("Menu \n 1. Large Pizza - $12 \n 2. Medium Pizza - $8 \n 3. Small Pizza - $5 \n 4. Thin Crust - No extra charge\n O. olives-.50 \n A. Artichokes-.50 \n P. Pinaples-.50 \n 5. Thick Crust - $1 extra charge!\n Drinks \n 6. Cola - $2 \n 7. Orange Juice - $2 \n 8. Water - Free \n Dessert \n 9. Ice Cream - $2 \n 10. Brownie- $1 \n 11. Cookie- 50 cents \n End. End Order \n menu. menu ",0.05)
 		else:
 			break
-	DISCOUNT = input("What is the discount code?(ENTER 5 FOR 5 DOLLARS OFF!!!!")
+	DISCOUNT = input("What is the discount code?(ENTER 5 FOR 1 DOLLARS OFF!!!!")
 	if DISCOUNT == "5":
-		cost = cost-5
+		cost = cost-1
 	else :
 		printt("OK your loss.",0.05)
 			
@@ -113,20 +113,24 @@ if language == "1":
 		if password == "34745":
 			cost = 0
 			sales= 0
-			printt("Total cost for", number, "items is $", cost,"and your sales tax is", sales,0.05)
-			printt("Thank You for eating at Adiths Pizzeria!",0.05)
+			print("Total cost for", number, "items is $", cost,"and your sales tax is", sales)
 			restore = input("System Restoration needed?")
-			if restore == "y":
+			if restore == "yes":
 				printt("System Restoration Started",0.05)
 				printt("1------2------3------4------5------",0.05)
-				printt("System Restoration Completed")
+				printt("System Restoration Completed",0.05)
 				number == 0
 				cost == 0
 				sales == 0
 				printt("Total cost for", number, "items is $", cost,"and your sales tax is", sales,0.05)
-			elif restore == "n":
+			elif restore == "no":
 				printt("Ok, Bye",0.05)
 				flag = True
+		else:
+			printt("Boss system failed.",0.05)
+
+			
+			
 	else:
 		print("Total cost for", number, "items is $", cost,"and your sales tax is", sales)
 		print("Thank You,",name,"for eating at Adiths Pizzeria!",0.05)
