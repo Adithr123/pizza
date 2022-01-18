@@ -8,7 +8,7 @@ def printt(string, delay):
     sleep(delay)
 
 DISCOUNT = 0
-language = input("Englis - 1, Spanish - 2")
+language = input("English - 1, Spanish - 2")
 
 if language == "1":
 	#welcome!
