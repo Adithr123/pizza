@@ -265,4 +265,5 @@ elif language == "2":
 		print("Grasias,",name,"por comer en Adiths Pizzeria!")
 		flag = True
 		printt("Tu pizza se puede encontrar en: https://bit.ly/whatyoupaidfor. Tienes que copiar y pegar el enlace en una pestaña diferente, o de lo contrario te dará un error. No se porque.",0.05)
-		
+else: 
+	printt("A fatal error has occured.Please contact me immediately(Discord - -Avdol-#1409, Matrix - -avdol-:matrix.org, Email - adith08@gmail.com), with a full report"0.05)
