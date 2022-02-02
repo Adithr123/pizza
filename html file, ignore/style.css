@@ -1,0 +1,10 @@
+.hero{
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+		
+    background-image: url("https://media2.giphy.com/media/3osxYoufeOGOA7xiX6/giphy.gif");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 70%;
+}
