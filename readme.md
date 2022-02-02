@@ -8,4 +8,5 @@ run in on repl.it here - https://replit.com/github/Adithr123/pizza
 
 
 *Keep in mind that this is still in progress, and I will keep updating.*
-*Please contact me with issues and feture requests*
+
+*Please contact me with issues and feature requests*a
