@@ -18,7 +18,7 @@ if language == "1":
 	#order name
 	name = input("What would you like your order name to be? ")
 	#boss's command pallete
-	if name == "Boss":
+	if name == "Boss" or name == "boss":
 		printt("Hello Boss. Menu?",0.005)
 		menu=input("Would you like the menu?y/n")
 		if menu=="y":
@@ -37,7 +37,7 @@ if language == "1":
 		#ordering mechanisim
 	while loop == True:
 		order = input("What would you like? Print the number of your desired item to buy.")
-		if order == "end" :
+		if order == "end" or order == "End" :
 			loop = False
 		elif order == "1":
 			number_things = eval(input("How many would you like?"))
@@ -102,16 +102,16 @@ if language == "1":
 			print ("Menu \n 1. Large Pizza - $12 \n 2. Medium Pizza - $8 \n 3. Small Pizza - $5 \n 4. Thin Crust - No extra charge\n O. olives-.50 \n A. Artichokes-.50 \n P. Pinaples-.50 \n 5. Thick Crust - $1 extra charge!\n Drinks \n 6. Cola - $2 \n 7. Orange Juice - $2 \n 8. Water - Free \n Dessert \n 9. Ice Cream - $2 \n 10. Brownie- $1 \n 11. Cookie- 50 cents \n End. End Order \n menu. menu ")
 		else:
 			break
-	DISCOUNT = input("What is the discount code?(ENTER 5 FOR 1 DOLLARS OFF!!!!")
+	DISCOUNT = input("What is the discount code?(ENTER 5 FOR 5 DOLLARS OFF!!!!)")
 	if DISCOUNT == "5":
-		cost = cost-1
+		cost = cost-5
 	else :
 		printt("OK your loss.",0.005)
 			
 	sales = cost + number
 	tip = input("What is your tip?(Whole number. No decimals...)")
 	cost = cost + int(tip)
-	if name == "Boss":
+	if name == "Boss" or name == "boss":
 		password = input("What is the password?")
 		if password == "34745":
 			cost = 0
@@ -119,14 +119,14 @@ if language == "1":
 			print("Total cost for", number, "items is $", cost,"and your sales tax is", sales)
 			restore = input("System Restoration needed?")
 			if restore == "yes" or restore == "y" or restore == "Y":
-				printt("System Restoration Started",0.005)
-				printt("1------2------3------4------5------",0.005)
-				printt("System Restoration Completed",0.005)
+				printt("System Restoration Started\n",0.005)
+				printt("1------2------3------4------5\n",0.005)
+				printt("System Restoration Completed\n",0.005)
 				number == 0
 				cost == 0
 				sales == 0
-				printt("Total cost for", number, "items is $", cost,"and your sales tax is", sales,0.005)
-			elif restore == "no":
+				print("\nTotal cost for", number, "items is $", cost,"and your sales tax is", sales)
+			elif restore == "no" or restore == "No" or restore == "n" or restore == "N":
 				printt("Ok, Bye",0.005)
 				flag = True
 		else:
@@ -146,17 +146,17 @@ elif language == "2":
 	#order name
 	name = input("Qual es tu nombre? ")
 	#boss's command pallete
-	if name == "Jefe":
+	if name == "Jefe" or name == "jefe":
 		printt("Hola Jefe. Menu?",0.005)
 		menu=input("Te gustaria el meny?s/n")
 		if menu=="s":
-			print ("Menú \n ¡Siga las mayúsculas exactas!\n 1. Pizza grande - $12 \n 2. Pizza mediana - $8 \n 3. Pizza pequeña - $5 \n 4. Masa fina - Sin cargo adicional\n O. aceitunas - 0,50 \ n A. Alcachofas - 0,50 \n P. Piñas - 0,50 \n 5. Masa gruesa: ¡cargo adicional de $1!\n Bebidas \n 6. Cola - $2 \n 7. Jugo de naranja - $2 \n 8. Agua - Gratis \n Postre \n 9. Helado - $2 \n 10. Brownie - $1 \n 11. Galleta - 50 centavos \n fin. Menú Finalizar pedido \n. menú")
+			print ("Menú \n ¡Siga las mayúsculas exactas!\n 1. Pizza grande - $12 \n 2. Pizza mediana - $8 \n 3. Pizza pequeña - $5 \n 4. Masa fina - Sin cargo adicional\n O. aceitunas - 0,50 \n A. Alcachofas - 0,50 \n P. Piñas - 0,50 \n 5. Masa gruesa: ¡cargo adicional de $1!\n Bebidas \n 6. Cola - $2 \n 7. Jugo de naranja - $2 \n 8. Agua - Gratis \n Postre \n 9. Helado - $2 \n 10. Brownie - $1 \n 11. Galleta - 50 centavos \n fin. Menú Finalizar pedido \n. menú")
 		else:
 			printt("Está bien. Tu tienda funciona perfectamente.",0.005)
 	#normal command pallete
 	else:
 		printt("¡Bienvenido a mi pizzería totalmente automatizada! Aquí está mi menú",0.005)
-		print ("\n ¡Siga las mayúsculas exactas!\n 1. Pizza grande - $12 \n 2. Pizza mediana - $8 \n 3. Pizza pequeña - $5 \n 4. Masa fina - Sin cargo adicional\n O. aceitunas - 0,50 \ n A. Alcachofas - 0,50 \n P. Piñas - 0,50 \n 5. Masa gruesa: ¡cargo adicional de $1!\n Bebidas \n 6. Cola - $2 \n 7. Jugo de naranja - $2 \n 8. Agua - Gratis \n Postre \n 9. Helado - $2 \n 10. Brownie - $1 \n 11. Galleta - 50 centavos \n fin. Menú Finalizar pedido \n. menú")
+		print ("\n ¡Siga las mayúsculas exactas!\n 1. Pizza grande - $12 \n 2. Pizza mediana - $8 \n 3. Pizza pequeña - $5 \n 4. Masa fina - Sin cargo adicional\n O. aceitunas - 0,50 \n A. Alcachofas - 0,50 \n P. Piñas - 0,50 \n 5. Masa gruesa: ¡cargo adicional de $1!\n Bebidas \n 6. Cola - $2 \n 7. Jugo de naranja - $2 \n 8. Agua - Gratis \n Postre \n 9. Helado - $2 \n 10. Brownie - $1 \n 11. Galleta - 50 centavos \n fin. Menú Finalizar pedido \n. menú")
 	 #define cost and number
 	cost=0
 	number=0
@@ -180,7 +180,7 @@ elif language == "2":
 			cost = cost + int(number_things) * 5
 			number = number+ 1
 		elif order == "4":
-			number_things = eval(input("How many would you like"))
+			number_things = eval(input("¿Cuantos te gustaria?"))
 			printt ("Gratis!",0.005)
 			cost = cost + int(number_things) * 0
 		elif order == "5" :
@@ -227,10 +227,10 @@ elif language == "2":
 			number = number+ 1
 			cost = cost + int(number_things) * 0.050
 		elif order=="menu":
-			print ("\n¡Siga las mayúsculas exactas!\n 1. Pizza grande - $12 \n 2. Pizza mediana - $8 \n 3. Pizza pequeña - $5 \n 4. Masa fina - Sin cargo adicional\n O. aceitunas - 0,50 \ n A. Alcachofas - 0,50 \n P. Piñas - 0,50 \n 5. Masa gruesa: ¡cargo adicional de $1!\n Bebidas \n 6. Cola - $2 \n 7. Jugo de naranja - $2 \n 8. Agua - Gratis \n Postre \n 9. Helado - $2 \n 10. Brownie - $1 \n 11. Galleta - 50 centavos \n fin. Menú Finalizar pedido \n. menú")
+			print ("\n¡Siga las mayúsculas exactas!\n 1. Pizza grande - $12 \n 2. Pizza mediana - $8 \n 3. Pizza pequeña - $5 \n 4. Masa fina - Sin cargo adicional\n O. aceitunas - 0,50 \n A. Alcachofas - 0,50 \n P. Piñas - 0,50 \n 5. Masa gruesa: ¡cargo adicional de $1!\n Bebidas \n 6. Cola - $2 \n 7. Jugo de naranja - $2 \n 8. Agua - Gratis \n Postre \n 9. Helado - $2 \n 10. Brownie - $1 \n 11. Galleta - 50 centavos \n fin. Menú Finalizar pedido \n. menú")
 		else:
 			break
-	DISCOUNT = input("¿Cuál es el código de descuento?(INGRESA 5 POR 1 DÓLAR DE DESCUENTO!!!!")
+	DISCOUNT = input("¿Cuál es el código de descuento?(INGRESA 5 POR 1 DÓLAR DE DESCUENTO!!!!)")
 	if DISCOUNT == "5":
 		cost = cost-1
 	else :
@@ -239,7 +239,7 @@ elif language == "2":
 	sales = cost + number
 	tip = input("¿Cuál es tu propina? (Número entero. Sin decimales...)")
 	cost = cost + int(tip)
-	if name == "Jefe":
+	if name == "Jefe" or name == "jefe":
 		password = input("¿Cual es la contraseña?")
 		if password == "34745":
 			cost = 0
@@ -247,9 +247,9 @@ elif language == "2":
 			print("Costo total de", number, "los artículos son $", cost,"y su impuesto sobre las ventas es", sales,0.005)
 			restore = input("¿Se necesita restauración del sistema?")
 			if restore == "Si":
-				printt("Restauración del sistema iniciada",0.005)
-				printt("1------2------3------4------5------",0.005)
-				printt("Restauración del sistema completado",0.005)
+				printt("Restauración del sistema iniciada\n",0.005)
+				printt("1------2------3------4------5\n",0.005)
+				printt("Restauración del sistema completado\n",0.005)
 				number == 0
 				cost == 0
 				sales == 0
@@ -268,4 +268,4 @@ elif language == "2":
 		flag = True
 		printt("Tu pizza se puede encontrar en: https://bit.ly/whatyoupaidfor. Tienes que copiar y pegar el enlace en una pestaña diferente, o de lo contrario te dará un error. No se porque.",0.005)
 else: 
-	printt("A fatal error has occured.Please contact me immediately(Discord - -Avdol-#1409, Matrix - -avdol-:matrix.org, Email - adith08@gmail.com), with a full report.",0.005)
+	printt("A error has occured.Please contact me. Discord = -Avdol-#1409, Matrix = -avdol-:matrix.org, Email = adith08@gmail.com, with a report.",0.005)
