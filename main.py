@@ -119,9 +119,9 @@ if language == "1":
 			print("Total cost for", number, "items is $", cost,"and your sales tax is", sales)
 			restore = input("System Restoration needed?")
 			if restore == "yes" or restore == "y" or restore == "Y":
-				printt("System Restoration Started\n",0.005)
-				printt("1------2------3------4------5\n",0.005)
-				printt("System Restoration Completed\n",0.005)
+				printt("System Restoration Started\n",0.05)
+				printt("1------2------3------4------5\n",0.5)
+				printt("System Restoration Completed\n",0.05)
 				number == 0
 				cost == 0
 				sales == 0
