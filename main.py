@@ -247,9 +247,9 @@ elif language == "2":
 			print("Costo total de", number, "los artículos son $", cost,"y su impuesto sobre las ventas es", sales,0.005)
 			restore = input("¿Se necesita restauración del sistema?")
 			if restore == "Si":
-				printt("Restauración del sistema iniciada\n",0.005)
-				printt("1------2------3------4------5\n",0.005)
-				printt("Restauración del sistema completado\n",0.005)
+				printt("Restauración del sistema iniciada\n",0.05)
+				printt("1------2------3------4------5\n",0.5)
+				printt("Restauración del sistema completado\n",0.05)
 				number == 0
 				cost == 0
 				sales == 0
