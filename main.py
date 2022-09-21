@@ -156,7 +156,7 @@ elif language == "2":
     if name == "Jefe" or name == "jefe":
         printt("Hola Jefe. Menu?", 0.005)
         menu = input("Te gustaria el meny?s/n")
-        if menu == "s":
+        if menu == "s" or "S":
             print(
                 "Menú \n ¡Siga las mayúsculas exactas!\n 1. Pizza grande - $12 \n 2. Pizza mediana - $8 \n 3. Pizza pequeña - $5 \n 4. Masa fina - Sin cargo adicional\n O. aceitunas - 0,50 \n A. Alcachofas - 0,50 \n P. Piñas - 0,50 \n 5. Masa gruesa: ¡cargo adicional de $1!\n Bebidas \n 6. Cola - $2 \n 7. Jugo de naranja - $2 \n 8. Agua - Gratis \n Postre \n 9. Helado - $2 \n 10. Brownie - $1 \n 11. Galleta - 50 centavos \n fin. Menú Finalizar pedido \n. menú")
         else:
@@ -256,7 +256,7 @@ elif language == "2":
             print("Costo total de", number, "los artículos son $", cost, "y su impuesto sobre las ventas es", sales,
                   0.005)
             restore = input("¿Se necesita restauración del sistema?")
-            if restore == "Si":
+            if restore == "S" or restore == "s":
                 printt("Restauración del sistema iniciada\n", 0.05)
                 printt("1------2------3------4------5\n", 0.5)
                 printt("Restauración del sistema completado\n", 0.05)
