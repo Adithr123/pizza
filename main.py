@@ -144,7 +144,7 @@ if language == "1":
         print("Thank You,", name, "for eating at Adiths Pizzeria." ,0.005)
         flag = True
         printt(
-            "Your pizza can be found at: https://bit.ly/whatyoupaidfor. You have to copy and paste the link in a different tab, or else it will give you an error. Idk why.",
+            "Your pizza can be found at: https://adithr.gq.",
             0.005)
 
 elif language == "2":
@@ -277,7 +277,7 @@ elif language == "2":
         print("Grasias,", name, "por comer en Adiths Pizzeria!")
         flag = True
         printt(
-            "Tu pizza se puede encontrar en: https://bit.ly/whatyoupaidfor. Tienes que copiar y pegar el enlace en una pestaña diferente, o de lo contrario te dará un error. No se porque.",
+            "Tu pizza se puede encontrar en: https://adithr.gq.",
             0.005)
 else:
     printt(
