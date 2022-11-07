@@ -13,7 +13,7 @@ def printt(string, delay):
 
 
 DISCOUNT = 0
-language = input("English - 1, Spanish - 2")
+language = input("English - 1, Spanish - 2 -- ")
 
 if language == "1":
     # welcome!
@@ -141,7 +141,7 @@ if language == "1":
 
     else:
         print("Total cost for", number, "items is $", cost, "and your sales tax is", sales)
-        print("Thank You,", name, "for eating at Adiths Pizzeria!", 0.005)
+        print("Thank You,", name, "for eating at Adiths Pizzeria." ,0.005)
         flag = True
         printt(
             "Your pizza can be found at: https://bit.ly/whatyoupaidfor. You have to copy and paste the link in a different tab, or else it will give you an error. Idk why.",
